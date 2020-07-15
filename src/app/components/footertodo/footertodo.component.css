@@ -1,0 +1,22 @@
+.footer{
+  border-top: 1px solid #d8cdcd;
+  padding: 5px;
+}
+.compose-button{
+  margin-left:100px;
+}
+.filter-button{
+  border:none;
+  border-radius: 5%;
+  margin-right: 5px;
+  background-color: white;
+}
+.filter-button:hover,.active{
+  border: 1px solid black;
+}
+.clear-completed-btn{
+  align-items: flex-end;
+  border: none;
+  margin-left: 5vw;
+  background-color: white;
+}

@@ -1,0 +1,9 @@
+<app-item-todo
+*ngFor="let todo of (todo$ | async)"
+  [todo]="todo"
+  (changeStatus)="onChangeTodoStatus($event)"
+  (editTodo)="onEditTodo($event)"
+  (deleteTodo)="onDeleteTodo($event)"
+>
+leu leu leu
+</app-item-todo>

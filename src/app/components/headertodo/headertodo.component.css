@@ -1,0 +1,14 @@
+.icon-wrap{
+  font-size: 40px;
+  color:rgb(129, 123, 123); 
+  padding-top: 5px;
+  width: 40px;
+}
+.icon-wrap >i{
+  font-size:40px;
+}
+
+.icon-wrap:hover{
+  transform: scale(1.5);
+  color:black;
+}
