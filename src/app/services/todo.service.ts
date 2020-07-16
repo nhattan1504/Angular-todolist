@@ -23,7 +23,7 @@ export class TodoService {
   fetchDataLocalStorage(){
     this.todos=this.storageService.getValue(TodoService.TodoStorageKey) || [];
     this.filteredTodos=[...this.todos];
-    //this.updateData();
+    this.updateTodosData();
   }
   updateLocalStorage(){
     this.storageService.setObject(TodoService.TodoStorageKey,this.todos);

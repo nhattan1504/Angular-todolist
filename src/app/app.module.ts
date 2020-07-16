@@ -8,7 +8,7 @@ import { ListTodoComponent } from './components/list-todo/list-todo.component';
 import { ItemTodoComponent } from './components/item-todo/item-todo.component';
 import { InputTodoComponent } from './components/input-todo/input-todo.component';
 import { CommonModule } from '@angular/common';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     BrowserModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

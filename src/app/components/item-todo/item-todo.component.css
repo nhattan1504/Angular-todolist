@@ -1,0 +1,23 @@
+.todo>input{
+  margin: 0px 10px;
+  width: 60px;
+  height: 30px;
+}
+.todo-item:hover i {
+  visibility: visible;
+}
+
+input[type='checkbox']:checked+ label.strikethrough{
+  text-decoration: line-through;
+}
+
+.todo>label{
+  font-size: 40px;
+  columns: #65686b;
+}
+
+i{
+  font-size: larger;
+  padding-right: 30px;
+  visibility: hidden;
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 import {Todo} from 'src/app/models/todo.models';
-
+import {state,trigger,} from '@angular/animations';
 @Component({
   selector: 'app-item-todo',
   templateUrl: './item-todo.component.html',
