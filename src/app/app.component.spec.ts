@@ -1,11 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-
+import {FootertodoComponent} from '../app/components/footertodo/footertodo.component';
+import {HeadertodoComponent} from '../app/components/headertodo/headertodo.component';
+import {ListTodoComponent} from '../app/components/list-todo/list-todo.component';
+import {ItemTodoComponent} from '../app/components/item-todo/item-todo.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        FootertodoComponent,
+        HeadertodoComponent,
+        ListTodoComponent,
+        ItemTodoComponent
       ],
     }).compileComponents();
   }));

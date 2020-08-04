@@ -1,10 +1,30 @@
 import { Component, OnInit, Input, Output,EventEmitter } from '@angular/core';
 import {Todo} from 'src/app/models/todo.models';
-import {state,trigger,} from '@angular/animations';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+
+const fadeStrikeThroughAnimation = trigger('fadeStrikeThrough', [
+  state(
+    'active',
+    style({
+      fontSize: '30px',
+      color: 'black',
+    }),
+  ),
+  state(
+    'completed',
+    style({
+      fontSize: '25px',
+      color: 'lightgrey',
+      textDecoration: 'line-through',
+    }),
+  ),
+  transition('active <=> completed', [animate(250)]),
+]);
 @Component({
   selector: 'app-item-todo',
   templateUrl: './item-todo.component.html',
-  styleUrls: ['./item-todo.component.css']
+  styleUrls: ['./item-todo.component.css'],
+  animations: [fadeStrikeThroughAnimation],
 })
 export class ItemTodoComponent implements OnInit {
   @Input() todo: Todo;

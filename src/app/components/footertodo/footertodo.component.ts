@@ -15,16 +15,16 @@ export class FootertodoComponent implements OnInit {
     {type:Fill.Done,label:'Done',isActive:false}
   ];
   length=0;
-  hasCompleted$: Observable<boolean>;
-  destroyed$: Subject<null>=new Subject<null>();
+  hasCompleted: Observable<boolean>;
+  destroyed: Subject<null>=new Subject<null>();
   constructor(private todoService:TodoService) { }
   ngOnInit() {
-    this.hasCompleted$ = this.todoService.todos$.pipe(
+    this.hasCompleted = this.todoService.todos$.pipe(
       map(todos => todos.some(t => t.isDone)),
-      takeUntil(this.destroyed$),
+      takeUntil(this.destroyed),
     );
 
-    this.todoService.length$.pipe(takeUntil(this.destroyed$)).subscribe(length => {
+    this.todoService.length$.pipe(takeUntil(this.destroyed)).subscribe(length => {
       this.length = length;
     });
   }
@@ -45,8 +45,8 @@ export class FootertodoComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.destroyed$.next();
-    this.destroyed$.complete();
+    this.destroyed.next();
+    this.destroyed.complete();
   }
 
 }

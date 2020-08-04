@@ -5,14 +5,14 @@ import { TodoService } from 'src/app/services/todo.service';
 @Component({
   selector: 'app-list-todo',
   templateUrl: './list-todo.component.html',
-  styleUrls: ['./list-todo.component.css']
+  styleUrls: ['./list-todo.component.css'],
 })
 export class ListTodoComponent implements OnInit {
-  todo$:Observable<Todo[]>;
-  constructor(private todoService:TodoService) { }
+  todo$: Observable<Todo[]>;
+  constructor(private todoService: TodoService) {}
 
   ngOnInit(): void {
-    this.todo$= this.todoService.todos$;
+    this.todo$ = this.todoService.todos$;
   }
   onChangeTodoStatus(todo: Todo) {
     this.todoService.changeTodoStatus(todo.id, todo.isDone);
@@ -20,10 +20,9 @@ export class ListTodoComponent implements OnInit {
 
   onEditTodo(todo: Todo) {
     this.todoService.editTodo(todo.id, todo.content);
-  } 
+  }
 
   onDeleteTodo(todo: Todo) {
     this.todoService.deleteTodo(todo.id);
   }
-
 }

@@ -12,8 +12,8 @@
         {{ btn.label }}
       </button>
     </div>
-    <button class="filter-btn clear-completed-btn"
-    [ngClass]="{ visible:hasCompleted$ | async }"
+    <button class="filter-button clear-completed-btn"
+    [ngClass]="{ visible:hasCompleted | async }"
       (click)="clearCompleted()">
       Clear completed
     </button>
