@@ -1,4 +1,30 @@
-# Todomvc
+# Báo cáo first Angular App TodoList
+
+### Sinh viên hiện thực: Nguyễn Nhật Tân-Nguyễn Tấn Tín
+### Mentor: Anh Linh Trần
+
+### 1. Nội dung tìm hiểu:  
+* Tìm hiểu về framework front-end của Javascript là Angular. 
+* Tìm hiểu các thành phần, tính năng cơ bản và build một dự án của Angular (bao gồm fundamentals và Dev Workflow).
+### 2. Sản phẩm 
+* App TodoList (Todo MVC) hiện thực các chức năng thêm todo, filter các loại todo ( completed, active, all), xóa todo, chuyển trạng thái đồng loạt các todo. 
+### 3. Kết quả demo 
+### 4. Link tham khảo và tìm hiểu:
+* [Angular VietNam](https://https://www.facebook.com/groups/AngularVietnam )
+* [Angular Tutorial](https://angular.io/) 
+* [ 100 days of angular](https://github.com/angular-vietnam/100-days-of-angular) 
+* [rxjs](https://www.learnrxjs.io/)
+### 5. Các bài học được rút ra
+* Qua đây, nhóm em đã hiểu hơn về cơ chế hoạt động và cú pháp của angular. 
+* Tìm hiểu được cách sử dụng angular kết hợp với rxjs
+* Hiện thực và hiểu thêm về một số loại form validation. 
+* Hiểu thêm về cơ chế hoạt động của 1 trang web và testing
+### 6. Hạn chế
+* Vì trong quá trình tìm hiểu thời gian bị ngắt quãng để ôn thi nên kiến thức có phần chưa vững chắc. 
+
+# Hướng dẫn sử dụng
+
+## Todomvc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
